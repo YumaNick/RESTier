@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Microsoft.Restier.Providers.InMemory.Properties {
+namespace Microsoft.Restier.Shared {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Microsoft.Restier.Providers.InMemory.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class SharedResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal SharedResources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Restier.Providers.InMemory.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Microsoft.Restier.Providers.InMemory.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Microsoft.Restier.Publishers.OData.SharedResources", typeof(SharedResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,11 +61,11 @@ namespace Microsoft.Restier.Providers.InMemory.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unable to find DataStoreManager, please add singleton of type {0} to apiBase services collection firstly. .
+        ///   Looks up a localized string similar to A query for a single entity resulted in more than one record..
         /// </summary>
-        internal static string DataStoreManagerNotFound {
+        internal static string QueryShouldGetSingleRecord {
             get {
-                return ResourceManager.GetString("DataStoreManagerNotFound", resourceCulture);
+                return ResourceManager.GetString("QueryShouldGetSingleRecord", resourceCulture);
             }
         }
     }
