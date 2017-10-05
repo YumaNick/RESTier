@@ -1,0 +1,3 @@
+[submodule "WebApi"]
+	path = WebApi
+	url = ssh://by01-tfscl01.topsoft.local:22/ESB/_git/WebApi
