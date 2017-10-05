@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D5E947EB-03CB-4D04-8937-FF2131BB1F04}"
 EndProject
@@ -33,8 +33,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.OData.Service.Sam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.OData.Service.Sample.Trippin", "test\ODataEndToEnd\Microsoft.OData.Service.Sample.Trippin\Microsoft.OData.Service.Sample.Trippin.csproj", "{B379640E-9064-438D-8DA5-6F7B394C2C46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.OData.Service.Sample.TrippinInMemory", "test\ODataEndToEnd\Microsoft.OData.Service.Sample.TrippinInMemory\Microsoft.OData.Service.Sample.TrippinInMemory.csproj", "{B263C1E5-0184-4A1D-B438-8233559FD76B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.OData.Service.Sample.Tests", "test\ODataEndToEnd\Microsoft.OData.Service.Sample.Tests\Microsoft.OData.Service.Sample.Tests.csproj", "{C5FDAD47-4449-42FC-904F-C7FEBD0F4DB7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Restier.Providers.EntityFramework", "src\Microsoft.Restier.Providers.EntityFramework\Microsoft.Restier.Providers.EntityFramework.csproj", "{F7EC910E-17CE-4579-84C5-36D3777B3218}"
@@ -48,6 +46,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Restier.Providers.EntityFramework7.Tests", "test\Microsoft.Restier.Providers.EntityFramework7.Tests\Microsoft.Restier.Providers.EntityFramework7.Tests.csproj", "{16AC1EEC-D79C-49C1-9B85-728CF0079BED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Restier.Publishers.OData.Test", "test\Microsoft.Restier.Publishers.OData.Test\Microsoft.Restier.Publishers.OData.Test.csproj", "{31FE1F5B-7CD8-48F1-9CE3-4E57A0066440}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Restier.Providers.InMemory", "test\ODataEndToEnd\Microsoft.Restier.Providers.InMemory\Microsoft.Restier.Providers.InMemory.csproj", "{1CA9B17F-D3F8-4FC3-A992-5135DCCAB9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.OData.Service.Sample.TrippinInMemory", "test\ODataEndToEnd\Microsoft.OData.Service.Sample.TrippinInMemory\Microsoft.OData.Service.Sample.TrippinInMemory.csproj", "{B263C1E5-0184-4A1D-B438-8233559FD76B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,10 +89,6 @@ Global
 		{B379640E-9064-438D-8DA5-6F7B394C2C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B379640E-9064-438D-8DA5-6F7B394C2C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B379640E-9064-438D-8DA5-6F7B394C2C46}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B263C1E5-0184-4A1D-B438-8233559FD76B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B263C1E5-0184-4A1D-B438-8233559FD76B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B263C1E5-0184-4A1D-B438-8233559FD76B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B263C1E5-0184-4A1D-B438-8233559FD76B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C5FDAD47-4449-42FC-904F-C7FEBD0F4DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C5FDAD47-4449-42FC-904F-C7FEBD0F4DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5FDAD47-4449-42FC-904F-C7FEBD0F4DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -119,6 +117,14 @@ Global
 		{31FE1F5B-7CD8-48F1-9CE3-4E57A0066440}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31FE1F5B-7CD8-48F1-9CE3-4E57A0066440}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31FE1F5B-7CD8-48F1-9CE3-4E57A0066440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CA9B17F-D3F8-4FC3-A992-5135DCCAB9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA9B17F-D3F8-4FC3-A992-5135DCCAB9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA9B17F-D3F8-4FC3-A992-5135DCCAB9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA9B17F-D3F8-4FC3-A992-5135DCCAB9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B263C1E5-0184-4A1D-B438-8233559FD76B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B263C1E5-0184-4A1D-B438-8233559FD76B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B263C1E5-0184-4A1D-B438-8233559FD76B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B263C1E5-0184-4A1D-B438-8233559FD76B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,7 +143,6 @@ Global
 		{6A88BA5D-50C7-46F3-873B-07040BF16B57} = {4AC28EC2-FBCF-44CA-A922-0B257F55DE0D}
 		{B10AC223-BB61-4229-A063-353AD5D7E3C6} = {4AC28EC2-FBCF-44CA-A922-0B257F55DE0D}
 		{B379640E-9064-438D-8DA5-6F7B394C2C46} = {4AC28EC2-FBCF-44CA-A922-0B257F55DE0D}
-		{B263C1E5-0184-4A1D-B438-8233559FD76B} = {4AC28EC2-FBCF-44CA-A922-0B257F55DE0D}
 		{C5FDAD47-4449-42FC-904F-C7FEBD0F4DB7} = {4AC28EC2-FBCF-44CA-A922-0B257F55DE0D}
 		{F7EC910E-17CE-4579-84C5-36D3777B3218} = {0355FEC8-17CF-44B4-9D24-685266A349FB}
 		{D54A765E-4604-4C73-868B-0E0459B3A6B6} = {0355FEC8-17CF-44B4-9D24-685266A349FB}
@@ -145,5 +150,10 @@ Global
 		{04B29D57-8004-45FF-8C41-C49E0F20707C} = {552DD8A7-2F3A-4D0F-B623-B7D832C6C62B}
 		{16AC1EEC-D79C-49C1-9B85-728CF0079BED} = {552DD8A7-2F3A-4D0F-B623-B7D832C6C62B}
 		{31FE1F5B-7CD8-48F1-9CE3-4E57A0066440} = {552DD8A7-2F3A-4D0F-B623-B7D832C6C62B}
+		{1CA9B17F-D3F8-4FC3-A992-5135DCCAB9DE} = {4AC28EC2-FBCF-44CA-A922-0B257F55DE0D}
+		{B263C1E5-0184-4A1D-B438-8233559FD76B} = {4AC28EC2-FBCF-44CA-A922-0B257F55DE0D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2ED6537-240C-4343-9A5F-66874AACA10C}
 	EndGlobalSection
 EndGlobal
