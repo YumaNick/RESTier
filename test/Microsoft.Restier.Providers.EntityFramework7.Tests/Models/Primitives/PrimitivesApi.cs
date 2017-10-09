@@ -6,45 +6,45 @@ using Microsoft.Restier.Providers.EntityFramework;
 
 namespace Microsoft.Restier.Providers.EntityFramework7.Tests.Models.Primitives
 {
-    class PrimitivesApi : EntityFrameworkApi<PrimitivesContext>
-    {
-        public PrimitivesApi(IServiceProvider sp) : base(sp)
-        {
-        }
+	class PrimitivesApi : EntityFrameworkApi<PrimitivesContext>
+	{
+		public PrimitivesApi(IServiceProvider sp) : base(sp)
+		{
+		}
 
-        internal PrimitivesContext DataContext
-        {
-            get { return (PrimitivesContext)this.DbContext; }
-        }
-    }
+		internal PrimitivesContext DataContext
+		{
+			get { return (PrimitivesContext)this.DbContext; }
+		}
+	}
 
-    class PrimitivesContext : DbContext
-    {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseInMemoryDatabase();
+	class PrimitivesContext : DbContext
+	{
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+#warning optionsBuilder.UseInMemoryDatabase();
 
-            base.OnConfiguring(optionsBuilder);
-        }
+			base.OnConfiguring(optionsBuilder);
+		}
 
-        public DbSet<DateItem> Dates { get; set; }
-    }
+		public DbSet<DateItem> Dates { get; set; }
+	}
 
-    class DateItem
-    {
-        [Key]
-        public int RowId { get; set; }
+	class DateItem
+	{
+		[Key]
+		public int RowId { get; set; }
 
-        public DateTime? DTProperty { get; set; }
+		public DateTime? DTProperty { get; set; }
 
-        public DateTimeOffset DTOProperty { get; set; }
+		public DateTimeOffset DTOProperty { get; set; }
 
-        public TimeSpan TSProperty { get; set; }
+		public TimeSpan TSProperty { get; set; }
 
-        [Column(TypeName = "date")]
-        public DateTime? DateProperty { get; set; }
+		[Column(TypeName = "date")]
+		public DateTime? DateProperty { get; set; }
 
-        [Column(TypeName = "time")]
-        public TimeSpan? TODProperty { get; set; }
-    }
+		[Column(TypeName = "time")]
+		public TimeSpan? TODProperty { get; set; }
+	}
 }
