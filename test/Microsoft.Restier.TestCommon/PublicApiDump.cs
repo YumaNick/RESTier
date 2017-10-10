@@ -43,26 +43,28 @@ namespace Microsoft.Restier.TestCommon
 
         public void DumpApi(string[] assemblyList)
         {
-            Hashtable synonms = new Hashtable();
-            synonms.Add("System.Void", "void");
-            synonms.Add("System.Object", "object");
-            synonms.Add("System.String", "string");
-            synonms.Add("System.Int16", "short");
-            synonms.Add("System.Int32", "int");
-            synonms.Add("System.Int64", "long");
-            synonms.Add("System.Byte", "byte");
-            synonms.Add("System.Boolean", "bool");
-            synonms.Add("System.Char", "char");
-            synonms.Add("System.Decimal", "decimal");
-            synonms.Add("System.Double", "double");
-            synonms.Add("System.Single", "float");
+					Hashtable synonms = new Hashtable
+					{
+						{"System.Void", "void"},
+						{"System.Object", "object"},
+						{"System.String", "string"},
+						{"System.Int16", "short"},
+						{"System.Int32", "int"},
+						{"System.Int64", "long"},
+						{"System.Byte", "byte"},
+						{"System.Boolean", "bool"},
+						{"System.Char", "char"},
+						{"System.Decimal", "decimal"},
+						{"System.Double", "double"},
+						{"System.Single", "float"},
+						{"System.Object[]", "object[]"},
+						{"System.Char[]", "char[]"},
+						{"System.Byte[]", "byte[]"},
+						{"System.Int32[]", "int[]"},
+						{"System.String[]", "string[]"}
+					};
 
-            synonms.Add("System.Object[]", "object[]");
-            synonms.Add("System.Char[]", "char[]");
-            synonms.Add("System.Byte[]", "byte[]");
-            synonms.Add("System.Int32[]", "int[]");
-            synonms.Add("System.String[]", "string[]");
-            _synonms = synonms;
+					_synonms = synonms;
 
             ArrayList typesList = new ArrayList();
 
@@ -1016,16 +1018,18 @@ namespace Microsoft.Restier.TestCommon
             static private readonly Hashtable _memberType;
             static MemberCompare()
             {
-                Hashtable memberType = new Hashtable();
-                memberType.Add(MemberTypes.Field, 1);
-                memberType.Add(MemberTypes.Constructor, 2);
-                memberType.Add(MemberTypes.Property, 3);
-                memberType.Add(MemberTypes.Event, 4);
-                memberType.Add(MemberTypes.Method, 5);
-                memberType.Add(MemberTypes.NestedType, 6);
-                memberType.Add(MemberTypes.TypeInfo, 7);
-                memberType.Add(MemberTypes.Custom, 8);
-                _memberType = memberType;
+							Hashtable memberType = new Hashtable
+							{
+								{MemberTypes.Field, 1},
+								{MemberTypes.Constructor, 2},
+								{MemberTypes.Property, 3},
+								{MemberTypes.Event, 4},
+								{MemberTypes.Method, 5},
+								{MemberTypes.NestedType, 6},
+								{MemberTypes.TypeInfo, 7},
+								{MemberTypes.Custom, 8}
+							};
+							_memberType = memberType;
             }
 
             private Hashtable hash;
