@@ -1,3 +1,3 @@
 [submodule "WebApi"]
 	path = WebApi
-	url = ssh://by01-tfs02.topsoft.local:22/ESB/_git/WebApi
+	url = https://github.com/volanavlad/WebApi-1.git
