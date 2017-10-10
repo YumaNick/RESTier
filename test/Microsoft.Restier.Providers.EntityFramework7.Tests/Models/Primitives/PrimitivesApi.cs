@@ -22,8 +22,7 @@ namespace Microsoft.Restier.Providers.EntityFramework7.Tests.Models.Primitives
 	{
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-#warning optionsBuilder.UseInMemoryDatabase();
-
+			optionsBuilder.UseInMemoryDatabase();
 			base.OnConfiguring(optionsBuilder);
 		}
 
